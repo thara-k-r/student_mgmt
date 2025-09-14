@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h4>Student Details</h4>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Name:</strong> {{ student.name }}</li>
+  <li class="list-group-item"><strong>Age:</strong> {{ student.age }}</li>
+  <li class="list-group-item"><strong>Course:</strong> {{ student.course }}</li>
+  <li class="list-group-item"><strong>Grade:</strong> {{ student.grade }}</li>
+</ul>
+<a class="btn btn-secondary mt-3" href="{{ url_for('index') }}">Back</a>
+{% endblock %}
